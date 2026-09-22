@@ -3,12 +3,12 @@
 SGS est une application web de **gestion de stock pour plusieurs entreprises** (multi-tenant).
 Concrètement, ça permet à une entreprise de gérer tout ce qui touche de près ou de loin à ses produits :
 
-- 📦 **Le catalogue** : articles, catégories, prix, taux de TVA
-- 🧾 **Les commandes** : commandes clients (qui font sortir du stock) et commandes fournisseurs (qui font entrer du stock)
-- 🏪 **Les ventes au comptoir** : style caisse, le stock baisse immédiatement
-- 📊 **Le stock** : niveaux actuels, alertes quand ça devient bas, valeur totale de l'inventaire
-- 🔔 **Les notifications** : alerte quand un article passe sous son seuil minimum
-- 👥 **Les comptes** : chaque entreprise a ses propres utilisateurs, ses propres données, cloisonnées des autres
+- **Le catalogue** : articles, catégories, prix, taux de TVA
+-  **Les commandes** : commandes clients (qui font sortir du stock) et commandes fournisseurs (qui font entrer du stock)
+-  **Les ventes au comptoir** : style caisse, le stock baisse immédiatement
+-  **Le stock** : niveaux actuels, alertes quand ça devient bas, valeur totale de l'inventaire
+-  **Les notifications** : alerte quand un article passe sous son seuil minimum
+-  **Les comptes** : chaque entreprise a ses propres utilisateurs, ses propres données, cloisonnées des autres
 
 Chaque mouvement de stock est **tracé et historisé** : on sait toujours d'où vient une variation (une commande, une vente, un ajustement manuel).
 
@@ -41,7 +41,7 @@ Le projet est découpé en deux parties :
 
 ## Lancer le projet, étape par étape
 
-### 1️⃣ Préparer la base de données
+### 1 Préparer la base de données
 
 Le backend s'attend à une base PostgreSQL nommée `stock_db`, accessible en local avec l'utilisateur `postgres`.
 Choisis ton mot de passe et note-le, tu en auras besoin juste après :
@@ -54,7 +54,7 @@ sudo -u postgres createdb stock_db
 
 > 💡 La structure de la base est créée automatiquement au premier démarrage grâce à Flyway (les migrations vivent dans `backend/src/main/resources/db/migration/`). Tu n'as **rien à créer à la main**.
 
-### 2️⃣ Lancer le backend
+### 2️ Lancer le backend
 
 ```bash
 cd backend
@@ -68,7 +68,7 @@ Quand tu vois les logs Spring démarrer sans erreur, l'API est prête :
 - API : http://localhost:8081
 - **Swagger (documentation interactive)** : http://localhost:8081/swagger-ui/index.html
 
-### 3️⃣ Lancer le frontend
+### 3️ Lancer le frontend
 
 Dans un **autre terminal** :
 
