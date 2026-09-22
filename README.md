@@ -78,7 +78,7 @@ npm install
 npm run dev
 ```
 
-Puis ouvre **http://localhost:5173** dans ton navigateur. 🎉
+Puis ouvre **http://localhost:5173** dans ton navigateur. 
 
 ---
 
@@ -91,7 +91,6 @@ Au **premier démarrage**, le backend crée automatiquement un compte administra
 | `admin@sgs.local` | défini dans `DataInitializer.java` (constantes `BOOTSTRAP_*`) |
 
 C'est ce compte qui sert à onboarder les entreprises clientes depuis la console `/plateforme`.
-👉 **Pense à changer ces identifiants avant toute mise en production.**
 
 ---
 
